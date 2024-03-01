@@ -1,0 +1,47 @@
+*{
+    color: white;
+    font-family: monospace;
+    /* cursor: none; */
+}
+body{
+    background-color: black;
+}
+::selection {
+    background: lightgray; /* WebKit/Blink Browsers */
+}
+pre {
+    white-space: pre-wrap;
+}
+/* #console-input{
+    background: transparent;
+    border: none ;
+    resize: none;
+    outline: none ; */
+    /* caret-color: transparent; */
+/* } */
+#text-input{
+    display: inline-block;
+}
+#cursor{
+    /* position: relative; */
+    /* bottom: 2em;
+    left: 50px; */
+    display: inline-block;
+    background-color: white;
+    color: black;
+    animation: cursor-blink 1s steps(10,start) infinite;
+}
+@keyframes cursor-blink {
+    to{
+        /* visibility: hidden; */
+        color: white;
+        background-color: transparent;
+    }
+}
+
+
+/* #console-input:focus,
+#console-input:active{
+    border: none !important;
+    
+} */
